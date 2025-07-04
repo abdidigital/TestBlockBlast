@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background-color: #1a2a33;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(8, 40px); /* Papan 8x8 */
+    grid-template-rows: repeat(8, 40px);
+    gap: 4px;
+    background-color: #0f171e;
+    border: 2px solid #31c3bd;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.grid-cell {
+    width: 40px;
+    height: 40px;
+    background-color: #1f3641;
+    border-radius: 4px;
+}
+
+.block { /* Style untuk sel yang sudah terisi blok */
+    background-color: #31c3bd; /* Warna biru-hijau */
+    border: 1px solid #0f171e;
+}
+
+#block-pieces {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Tambahkan style untuk potongan blok yang bisa di-drag */
