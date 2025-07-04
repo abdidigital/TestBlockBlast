@@ -44,3 +44,42 @@ body {
 }
 
 /* Tambahkan style untuk potongan blok yang bisa di-drag */
+/* ... (CSS Anda yang sudah ada) ... */
+
+#block-pieces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    min-height: 100px; /* Beri ruang untuk blok */
+}
+
+/* Style untuk kontainer setiap blok */
+.piece {
+    cursor: grab;
+    display: grid; /* Gunakan grid untuk merender bentuk blok */
+}
+
+.piece:active {
+    cursor: grabbing;
+}
+
+/* Sel kecil di dalam setiap blok */
+.piece-cell {
+    width: 25px;   /* Ukuran lebih kecil untuk preview */
+    height: 25px;
+    border-radius: 3px;
+}
+
+/* WARNA-WARNA BLOK */
+.color-1 { background-color: #31c3bd; } /* Teal */
+.color-2 { background-color: #f2b137; } /* Yellow */
+.color-3 { background-color: #ff6b6b; } /* Red */
+.color-4 { background-color: #6aabff; } /* Blue */
+.color-5 { background-color: #a063f5; } /* Purple */
+
+/* Kelas untuk sel yang terisi di papan utama */
+.filled {
+    border: 1px solid #1a2a33;
+}
